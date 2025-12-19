@@ -1,0 +1,113 @@
+/* Сброс */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Тело страницы */
+body {
+  background-color: rgb(246, 209, 164);
+  font-family: Arial, sans-serif;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Контейнер */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Подзаголовок */
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* КНОПКА */
+.btn {
+  display: block;
+  margin: 0 auto 30px;
+
+  background-color: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+
+  padding: 16px 40px;
+  font-size: 18px;
+
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #0b5ea8;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Карточка информации */
+.info {
+  background-color: #111;
+  color: #eee;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.info p:last-child {
+  margin-bottom: 0;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* 📱 Адаптация */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 18px 0;
+    font-size: 16px;
+  }
+
+  .info {
+    max-width: 100%;
+    text-align: center;
+  }
+}
